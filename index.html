@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Build a transparent, tailored estimate for your next website project with Scopeflow.">
+  <title>Scopeflow — Website Project Estimator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" charset="UTF-8" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Scopeflow home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M7 10.25 16 5l9 5.25v11.5L16 27l-9-5.25v-11.5Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="m11.25 16 3.1 3.1 6.4-6.4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Scopeflow<span class="brand-period">.</span></span>
+    </a>
+    <span class="header-note"><span class="status-dot"></span> A clearer way to scope your next build</span>
+    <a class="header-action" href="#project-title">
+      Start Estimate
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro">
+      <p class="estimator-name">WEBSITE PROJECT ESTIMATOR</p>
+      <p class="eyebrow"><svg class="eyebrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg> Select your project features to instantly scope your build.</p>
+      <h1>Big idea. Clear scope.<br><span>Better estimate.</span></h1>
+      <p class="intro-copy">Share your ideas, goals, and thoughts about the website or web app you want. Choose the features that fit your vision, and we’ll turn them into a clear project scope and estimate.</p>
+    </section>
+
+    <div class="estimator-layout">
+      <section class="wizard-panel" aria-label="Project estimate wizard">
+        <div class="progress-section">
+          <div class="progress-heading">
+            <span class="progress-caption" id="step-caption">STEP 1 OF 4</span>
+            <span class="progress-label" id="progress-label">Project type</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Estimate progress" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" id="progress-track">
+            <span class="progress-fill" id="progress-fill"></span>
+          </div>
+          <div class="step-dots" aria-hidden="true">
+            <span class="step-dot is-current"></span><span class="step-dot"></span><span class="step-dot"></span><span class="step-dot"></span>
+          </div>
+        </div>
+
+        <form id="estimate-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="8dd3c293-6202-4fef-bc67-9566470c8154">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <section class="wizard-step is-active" data-step="1" aria-labelledby="project-title">
+            <div class="step-heading">
+              <span class="step-kicker">01 / THE FOUNDATION</span>
+              <h2 id="project-title">What are we building?</h2>
+              <p>Choose the kind of project that best fits your idea.</p>
+            </div>
+            <div class="option-list project-options">
+              <button class="option-card project-option" type="button" data-project="landing" data-price="100000" aria-pressed="false">
+                <span class="option-icon icon-lilac" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 9h17M7 6.8h.1m2.8 0h.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </span>
+                <span class="option-copy"><strong>Landing Page / Portfolio</strong><small>A focused home for your brand, work, or campaign.</small></span>
+                <span class="option-price"></span>
+                <span class="selection-mark" aria-hidden="true"></span>
+              </button>
+              <button class="option-card project-option" type="button" data-project="corporate" data-price="200000" aria-pressed="false">
+                <span class="option-icon icon-blue" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V7.5L12 4l8 3.5V20H4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 9h2m4 0h2m-8 4h2m4 0h2m-4 7v-4h3v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="option-copy"><strong>Corporate / Business Website</strong><small>A polished, multi-page site built to grow trust.</small></span>
+                <span class="option-price"></span>
+                <span class="selection-mark" aria-hidden="true"></span>
+              </button>
+              <button class="option-card project-option" type="button" data-project="ecommerce" data-price="350000" aria-pressed="false">
+                <span class="option-icon icon-peach" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h16l-1.2 11H5.2L4 8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </span>
+                <span class="option-copy"><strong>E-Commerce Store</strong><small>A ready-to-sell storefront with a smooth checkout.</small></span>
+                <span class="option-price"></span>
+                <span class="selection-mark" aria-hidden="true"></span>
+              </button>
+              <button class="option-card project-option" type="button" data-project="webapp" data-price="500000" aria-pressed="false">
+                <span class="option-icon icon-mint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="m9 10-2 2 2 2m6-4 2 2-2 2m-2.5-5-1 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="option-copy"><strong>Custom Web App / SaaS</strong><small>A bespoke digital product with room to scale.</small></span>
+                <span class="option-price"></span>
+                <span class="selection-mark" aria-hidden="true"></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="2" aria-labelledby="features-title" hidden>
+            <div class="step-heading">
+              <span class="step-kicker">02 / THE DETAILS</span>
+              <h2 id="features-title">What should it include?</h2>
+              <p>Pick all the extras that would make this project yours.</p>
+            </div>
+            <div class="option-list feature-options">
+              <button class="option-card feature-option" type="button" data-feature="design" data-price="60000" aria-pressed="false">
+                <span class="feature-check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="m3.5 8 3 3 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="option-copy"><strong>UI/UX Design from Scratch</strong><small>Custom visual direction and user flows.</small></span>
+                <span class="option-price"></span>
+              </button>
+              <button class="option-card feature-option" type="button" data-feature="payments" data-price="50000" aria-pressed="false">
+                <span class="feature-check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="m3.5 8 3 3 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="option-copy"><strong>Payment Gateway Integration</strong><small>Paystack or Flutterwave, configured for you.</small></span>
+                <span class="option-price"></span>
+              </button>
+              <button class="option-card feature-option" type="button" data-feature="auth" data-price="80000" aria-pressed="false">
+                <span class="feature-check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="m3.5 8 3 3 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="option-copy"><strong>User Authentication &amp; Dashboards</strong><small>Secure accounts and personalized spaces.</small></span>
+                <span class="option-price"></span>
+              </button>
+              <button class="option-card feature-option" type="button" data-feature="ai" data-price="100000" aria-pressed="false">
+                <span class="feature-check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="m3.5 8 3 3 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="option-copy"><strong>AI / Automation Integration</strong><small>Smarter workflows tailored to your needs.</small></span>
+                <span class="option-price"></span>
+              </button>
+            </div>
+          </section>
+
+          <section class="wizard-step" data-step="3" aria-labelledby="timeline-title" hidden>
+            <div class="step-heading">
+              <span class="step-kicker">03 / TIMING &amp; READINESS</span>
+              <h2 id="timeline-title">When do you need it?</h2>
+              <p>Choose a delivery pace and confirm what you have ready for launch.</p>
+            </div>
+            <div class="option-list timeline-options">
+              <button class="option-card timeline-option" type="button" data-timeline="standard" aria-pressed="false">
+                <span class="option-icon icon-mint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="option-copy"><strong>Standard Delivery</strong><small>A considered timeline for thoughtful work.</small></span>
+                <span class="option-price">No rush fee</span>
+                <span class="selection-mark" aria-hidden="true"></span>
+              </button>
+              <button class="option-card timeline-option" type="button" data-timeline="express" aria-pressed="false">
+                <span class="option-icon icon-peach" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M13.5 3.5 5.8 13h5.7l-1 7.5 7.7-10h-5.7l1-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="option-copy"><strong>Express Delivery</strong><small>Prioritized scheduling when time is tight.</small></span>
+                <span class="option-price">+25%</span>
+                <span class="selection-mark" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="timeline-note"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg> Express delivery adds 25% to your project subtotal.</div>
+            <section class="operations-section" aria-labelledby="operations-heading">
+              <div>
+                <h3 id="operations-heading">Operations &amp; Readiness</h3>
+                <p>Choose what you need before and after launch.</p>
+              </div>
+              <div class="operations-groups">
+                <fieldset class="operation-group">
+                  <legend>Brand Assets &amp; Content</legend>
+                  <div class="operation-options">
+                    <label class="option-card operation-option is-selected">
+                      <input class="operation-radio" type="radio" name="operation_assets" value="ready" data-operation="assets" data-choice="ready" checked>
+                      <span class="option-copy"><strong>I have logo, text &amp; images ready</strong></span>
+                      <span class="option-price"></span>
+                    </label>
+                    <label class="option-card operation-option">
+                      <input class="operation-radio" type="radio" name="operation_assets" value="creation" data-operation="assets" data-choice="creation">
+                      <span class="option-copy"><strong>I need content &amp; brand asset creation</strong></span>
+                      <span class="option-price"></span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="operation-group">
+                  <legend>Domain &amp; Hosting</legend>
+                  <div class="operation-options">
+                    <label class="option-card operation-option is-selected">
+                      <input class="operation-radio" type="radio" name="operation_domain" value="own" data-operation="domain" data-choice="own" checked>
+                      <span class="option-copy"><strong>I already have / will buy my own</strong></span>
+                      <span class="option-price"></span>
+                    </label>
+                    <label class="option-card operation-option">
+                      <input class="operation-radio" type="radio" name="operation_domain" value="setup" data-operation="domain" data-choice="setup">
+                      <span class="option-copy"><strong>Set up &amp; register domain/hosting for me</strong></span>
+                      <span class="option-price"></span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="operation-group">
+                  <legend>Post-Launch Support</legend>
+                  <div class="operation-options">
+                    <label class="option-card operation-option is-selected">
+                      <input class="operation-radio" type="radio" name="operation_support" value="warranty" data-operation="support" data-choice="warranty" checked>
+                      <span class="option-copy"><strong>Standard 14-day bug-fix warranty</strong></span>
+                      <span class="option-price"></span>
+                    </label>
+                    <label class="option-card operation-option">
+                      <input class="operation-radio" type="radio" name="operation_support" value="priority" data-operation="support" data-choice="priority">
+                      <span class="option-copy"><strong>30-Day Priority Maintenance &amp; Updates</strong></span>
+                      <span class="option-price"></span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </section>
+          </section>
+
+          <section class="wizard-step" data-step="4" aria-labelledby="contact-title" hidden>
+            <div class="step-heading">
+              <span class="step-kicker">04 / THE NEXT STEP</span>
+              <h2 id="contact-title">Let’s make it happen.</h2>
+              <p>Share your details and we’ll follow up about your project.</p>
+            </div>
+            <div class="contact-fields">
+              <label class="field-label" for="client-name">Your name</label>
+              <input class="text-field" id="client-name" name="name" autocomplete="name" placeholder="e.g. Amara Okafor" required>
+              <label class="field-label" for="project-name">Business name</label>
+              <input class="text-field" id="project-name" name="business_name" autocomplete="organization" placeholder="e.g. Northstar Studio" required>
+              <label class="field-label" for="client-email">Email address</label>
+              <input class="text-field" id="client-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <label class="field-label" for="client-phone">Phone number</label>
+              <input class="text-field" id="client-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="\+?[0-9\s\(\)\.\-]{7,20}" placeholder="+234 801 234 5678" required>
+              <p class="field-hint">Include your country code if you’re outside Nigeria. We’ll only use your details to respond to your inquiry.</p>
+            </div>
+            <div class="submit-actions">
+              <button class="button button-primary" type="button" id="whatsapp-button">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.8 7l-4.2 1.1 1.1-4.1A8 8 0 1 1 20 11.6Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.5c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.6 1.4c.1.2.1.3 0 .5l-.4.5c-.2.2-.2.3 0 .5.4.7 1 1.3 1.7 1.7.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.3.6c.2.1.3.2.3.4 0 .3-.2.8-.5 1-.3.3-.8.5-1.3.5-.4 0-1-.2-1.6-.4a8 8 0 0 1-3.4-3c-.4-.6-.7-1.3-.7-1.9 0-.5.2-.9.5-1.2Z" fill="currentColor"/></svg>
+                Send Quote via WhatsApp
+              </button>
+              <button class="button button-secondary" type="submit" id="email-button">
+                Submit inquiry via Email
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <div class="wizard-footer">
+            <button class="button button-back" type="button" id="back-button" disabled>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Back
+            </button>
+            <span class="save-note"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.8 13 4v3.4c0 3.2-2.1 5.6-5 6.8-2.9-1.2-5-3.6-5-6.8V4l5-2.2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="m5.8 7.8 1.5 1.5 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>Your selections stay in this browser</span>
+            <button class="button button-next" type="button" id="next-button">
+              Continue
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="summary-card" aria-label="Live estimate summary">
+        <div class="summary-topline">
+          <span class="summary-label">YOUR ESTIMATE</span>
+          <span class="negotiable-badge"><span></span> Negotiable</span>
+        </div>
+        <div class="estimate-amount" aria-live="polite">
+          <span class="estimate-currency">₦</span><strong id="estimate-low">0</strong>
+        </div>
+        <p class="estimate-range">to <span id="estimate-high">₦0</span></p>
+        <p class="estimate-caption">Estimated project range</p>
+        <div class="summary-divider"></div>
+        <div class="summary-line"><span>Project</span><strong id="summary-project">Not selected</strong></div>
+        <div class="summary-line summary-feature-line"><span>Features</span><strong id="summary-features">None selected</strong></div>
+        <div class="summary-line"><span>Timeline</span><strong id="summary-timeline">Not selected</strong></div>
+        <div class="summary-line"><span>Assets &amp; content</span><strong id="summary-assets"></strong></div>
+        <div class="summary-line"><span>Domain &amp; hosting</span><strong id="summary-domain"></strong></div>
+        <div class="summary-line"><span>Post-launch support</span><strong id="summary-support"></strong></div>
+        <div class="summary-total"><span>Current estimate</span><strong id="summary-total">₦0</strong></div>
+        <p class="summary-disclaimer">This is an automated estimate based on your selected features (Negotiable). Final pricing will be confirmed after a brief scope review.</p>
+        <div class="summary-foot"><span class="summary-lock" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span> No commitment. Just a starting point.</div>
+      </aside>
+    </div>
+    <footer class="page-footer">
+      <div class="footer-brand">
+        <h2>WEBSITE PROJECT ESTIMATOR</h2>
+        <p>Developed by <strong>Olisa Emeka Callistus</strong></p>
+      </div>
+      <p class="footer-copyright">© <span id="current-year"></span> All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
