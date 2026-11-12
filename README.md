@@ -22,10 +22,6 @@ This is a static site with no build step or package dependencies. Open `index.ht
 
 The form submits to `https://api.web3forms.com/submit`.
 
-1. Create an access key through [Web3Forms](https://web3forms.com/).
-2. Set it in the hidden `access_key` input in `index.html`.
-3. Submit the form from the deployed site to verify delivery.
-
 Web3Forms access keys are used in browser-side forms and are visible in page source and network requests; do not treat them as private secrets. Use Web3Forms' available spam protections and domain restrictions to reduce unauthorized submissions.
 
 The email field checks address syntax, but does not verify that the visitor owns or can access that mailbox. The submitted email body is plain text; its headings use uppercase text and separators rather than rendered bold styling.
